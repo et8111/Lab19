@@ -1,0 +1,72 @@
+1)
+SELECT * FROM customers
+
+2)
+SELECT distinct Country from Customers
+
+3)
+SELECT CustomerName FROM Customer
+where CustomerName like "Bl%";
+
+4)
+select * from Orders
+limit 100
+
+5)
+select * from Customers
+where PostalCode in ('1010', '3012', '12209', '05023');
+
+6)
+select * from customers
+where Postalcode = '';
+
+7)
+select * from customers
+order by country, city
+
+8)
+insert into Customers
+values(92, "John Doe", "Nunya", "1234 Street Ave", "Warren", "12345", "Wakanda");
+
+9)
+update Orders
+set ShipperID = "EuroZone"
+where ShipperID == 3;
+
+10)
+delete from orderdetails where Quantity == 1;
+
+11)
+Select avg(Quantity), max(quantity), min(quantity)
+from orderDetails
+
+12)
+Select avg(Quantity), max(quantity), min(quantity)
+from orderDetails
+group by orderID
+
+13)
+select customers.CustomerID
+from customers, orders
+where orders.orderid == 10290;
+
+14)
+select *
+from Customers
+inner join Orders
+
+select *
+from Customers
+left join Orders
+
+select *
+from Customers
+right join Orders
+
+15)
+select firstname from employees
+where length(firstName) > 5
+
+16)
+select firstname from employees
+where firstName = "Andrew";
